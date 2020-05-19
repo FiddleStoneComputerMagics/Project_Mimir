@@ -43,7 +43,7 @@ US001 - Характеристики Аудитории.md
 2. ...
 
 ## Интерфейс пользователя
-Интерфейс пользователя ....
+Интерфейс пользователя:
 ![Основное окно](https://github.com/FiddleStoneComputerMagics/Project_Mimir/blob/master/Interface_Demo.jpg)
 
 ## Критерии демонстрации информации
