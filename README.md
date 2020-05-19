@@ -36,8 +36,8 @@ _® - связи (relationship)_
 
 ##Схема
 
-![schema](https://raw.github.com/)
+![schema](https://github.com/FiddleStoneComputerMagics/Project_Mimir/blob/master/Scheme.pdf)
 
 ##Загрузки
 
-[FiddleStone_SQL_Project.rar v1.0](http)
+.........
