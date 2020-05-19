@@ -44,7 +44,7 @@ US001 - Характеристики Аудитории.md
 
 ## Интерфейс пользователя
 Интерфейс пользователя ....
-![Основное окно](https://z7c5w7f6.stackpathcdn.com/wp-content/uploads/2019/06/Matters-6-15-19-SO-2.png)
+![Основное окно](https://github.com/FiddleStoneComputerMagics/Project_Mimir/blob/master/Interface_Demo.jpg)
 
 ## Критерии демонстрации информации
 1. Пользователь ввел коректные данные
