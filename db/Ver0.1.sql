@@ -14,6 +14,7 @@ CREATE TABLE "Users" (
    FOREIGN KEY ("First") REFERENCES "Departament"("headOfDepartament"),
    FOREIGN KEY ("First") REFERENCES "Laboratory"("responsablePerson"),
 );
+
 CREATE TABLE "Faculty" (
   "dean" varchar NOT NULL,
   "name" varchar NOT NULL,
