@@ -1,3 +1,19 @@
+CREATE TABLE "Users" (
+  "id" numeric NOT NULL UNIQUE,
+  "First" varchar NOT NULL,
+  "Birth" integer NOT NULL,
+  "Adress" varchar NOT NULL,
+  "Login" varchar NOT NULL,
+  "Password" varchar NOT NULL,
+  "Position" varchar NOT NULL,
+   PRIMARY KEY (id),
+   FOREIGN KEY ("Position") REFERENCES "Faculty"("dean"),
+   FOREIGN KEY ("Position") REFERENCES "Departament"("headOfDepartament"),
+   FOREIGN KEY ("Position") REFERENCES "Laboratory"("responsablePerson"),
+   FOREIGN KEY ("First") REFERENCES "Faculty"("dean"),
+   FOREIGN KEY ("First") REFERENCES "Departament"("headOfDepartament"),
+   FOREIGN KEY ("First") REFERENCES "Laboratory"("responsablePerson"),
+);
 CREATE TABLE "Faculty" (
   "dean" varchar NOT NULL,
   "name" varchar NOT NULL,
@@ -44,23 +60,5 @@ CREATE TABLE "Building" (
   "name" varchar NOT NULL,
   "rooms" varchar NOT NULL
 );
-
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Нанотехнологий", "228");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Ядерной Физики", "227");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Нанотехнологий", "226");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Общей Физики", "225");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Технической Физики", "224");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Радиофизики", "223");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джотаро Куджо", "Физический Факультет", "Кафедра Инфокоммуникационных технологий", "222");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джонатан Джостар", "Химический Факультет", "Кафедра Органический Химии", "32");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джозеф Джостар", "Механико-математический Факультет", "Кафедра Многомерного Интегрирования", "124");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джоске Хигашиката", "Биологический Факультет", "Кафедра Зоологии", "235");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Кира Йошикаге", "Экономический Факультет", "Кафедра Экономического Планирования", "118");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Дио Брандо", "Геологический Факультет", "Кафедра Минералогии", "190");
-insert into "Faculty"("dean","name", "departaments", "rooms") values ("Джорно Джованна", "Исторический Факультет", "Кафедра Военной Истории", "179");
-insert into "Departament"("headOfDepartament", "name", "specialization", "faculty", "lablratories", "rooms") values ("Люк Скайуокер", "Кафедра Нанотехнологий", "Нанотехнологии и микросистемная техника", "Физический Факультет", "20", "400")
-
-
-
 
 
