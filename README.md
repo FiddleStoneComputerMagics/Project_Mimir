@@ -37,7 +37,7 @@ _® - связи (relationship)_
 
 **Схема**
 
-![СХЕМА](https://github.com/FiddleStoneComputerMagics/Project_Mimir/blob/master/Scheme.pdf)
+[СХЕМА](https://github.com/FiddleStoneComputerMagics/Project_Mimir/blob/master/docs/Scheme.pdf)
 
 **Загрузки**
 
