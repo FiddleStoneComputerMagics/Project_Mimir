@@ -60,10 +60,10 @@ ALTER TABLE list_workers ADD FOREIGN KEY (id) REFERENCES departament (list_worke
 
 ALTER TABLE audit ADD FOREIGN KEY (id) REFERENCES departament (name_department);
 
-CREATE UNIQUE INDEX faculty_index_0 ON faculty ("dean", "name");
+CREATE UNIQUE INDEX faculty_index_0 ON faculty (dean, name);
 
-CREATE UNIQUE INDEX departament_index_1 ON departament] ("name_department");
+CREATE UNIQUE INDEX departament_index_1 ON departament (name_department);
 
-CREATE UNIQUE INDEX building_index_2 ON [building] ("watchmen", "adress");
+CREATE UNIQUE INDEX building_index_2 ON building (watchmen, adress);
 
-CREATE UNIQUE INDEX room_index_3 ON room ("number");
+CREATE UNIQUE INDEX room_index_3 ON room (number);
